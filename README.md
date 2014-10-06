@@ -18,7 +18,7 @@ npm install --save-dev ember-cli-web-tools
 ember g ember-cli-web-tools
 ```
 
-To enable the addon within your app, you must configure your router to use the app's routes:
+To enable the addon within your app, you must configure your app's router to use the addon's routes:
 
 ```js
 /// app/router.js
