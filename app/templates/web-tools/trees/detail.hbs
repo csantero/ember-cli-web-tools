@@ -1,0 +1,20 @@
+<div>
+  <h4>Tree</h4>
+  <h6>{{description}}</h6>
+</div>
+
+<div>
+  <h4>Child Trees</h4>
+  <ul>
+    {{#each childNodes}}
+      <li>
+        {{#link-to "web-tools.trees.detail" id}}{{description}} - {{time}}{{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
+
+<div>
+  <h4>Directory</h4>
+  <h6>{{directory.path}}</h6>
+</div>

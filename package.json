@@ -1,5 +1,5 @@
 {
-  "name": "ember-broccoli-visualizer",
+  "name": "ember-cli-web-tools",
   "version": "0.0.0",
   "directories": {
     "doc": "doc",
@@ -10,7 +10,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/csantero/ember-cli-web-tools",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -33,6 +33,15 @@
     "ember-addon"
   ],
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "before": [
+      "serve-files-middleware",
+      "history-support-middleware",
+      "proxy-server-middleware"
+    ]
+  },
+  "dependencies": {
+    "lodash-node": "^2.4.1",
+    "q-io": "^1.11.5"
   }
 }
